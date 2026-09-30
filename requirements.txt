@@ -1,0 +1,26 @@
+# Pinned to the environment the released weights were trained and evaluated in.
+# Only `torch` / `transformers` / `accelerate` / `triton` are version-sensitive;
+# the rest are ordinary runtime dependencies.
+
+# --- core ---
+torch==2.2.2
+transformers==4.40.1
+accelerate==0.28.0
+triton==2.2.0                 # SVQ dequant kernels (dbw/triton_kernel/)
+numpy==1.26.4
+safetensors==0.7.0
+
+# --- training ---
+bitsandbytes==0.41.0          # paged AdamW used by train_e2e_qp.py
+datasets==2.18.0              # RedPajama / WikiText / C4 loaders
+sentencepiece==0.2.1          # Llama-2 / Mistral / Gemma tokenizers
+protobuf                      # required by sentencepiece converters
+tqdm
+termcolor                     # coloured logger in dbw/utils/__init__.py
+packaging
+
+# --- evaluation ---
+lm_eval==0.4.2                # test.py --mode acc
+
+# --- optional ---
+# wandb                       # only imported when WANDB=1

@@ -1,0 +1,29 @@
+# trained weights, released bundles, evaluation logs
+output/
+
+# dataloader / tokenized-dataset caches
+tmp/
+cache/
+
+# SVD factors produced by dbw/utils/decompose.py (script/others/save_svd.sh)
+svd/
+
+# experiment tracking
+wandb/
+runs/
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+build/
+dist/
+
+# environment / editor
+.env
+.venv/
+venv/
+.vscode/
+.idea/
+.DS_Store

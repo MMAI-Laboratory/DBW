@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dbw"
+version = "1.0.0"
+description = "Differentiable Bit-Widths: co-optimizing pruning and quantization via SVD for ultra-efficient LLM compression"
+readme = "README.md"
+requires-python = ">=3.9"
+
+# Runtime dependencies are intentionally not pinned here: the released weights
+# are version-sensitive (see requirements.txt), and `pip install -e .` should
+# not silently move torch/transformers under an already-working environment.
+# Install them first with:  pip install -r requirements.txt
+dependencies = []
+
+[tool.setuptools.packages.find]
+include = ["dbw*"]
