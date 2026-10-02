@@ -21,6 +21,7 @@ packaging
 
 # --- evaluation ---
 lm_eval==0.4.2                # test.py --mode acc
+peft==0.10.0                  # transitive lm_eval dep; newer peft needs a newer accelerate
 
 # --- optional ---
 # wandb                       # only imported when WANDB=1
