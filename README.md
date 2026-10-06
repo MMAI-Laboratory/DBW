@@ -1,6 +1,6 @@
 # DBW 
 
-This repository contains PyTorch-based official implementations for *"Differentiable Bit-Widths: Co-optimizing Pruning and Quantization via SVD for Ultra-Efficient LLM Compression (NeurIPS'26)."* This paper introduces a co-optimization method of pruning and quantization using differentiable bit-widths (DBW) to compress large language models (LLMs) into ultra-efficient scale. See [our paper]() for more details.
+This repository contains PyTorch-based official implementations for *"Differentiable Bit-Widths: Co-optimizing Pruning and Quantization via SVD for Ultra-Efficient LLM Compression (NeurIPS'26)."* This paper introduces a co-optimization method of pruning and quantization using differentiable bit-widths (DBW) to compress large language models (LLMs) into ultra-efficient scale. See [our paper](https://arxiv.org/abs/2610.06026) for more details.
 
 <p align="center">
     <img width="850px" src="https://github.com/user-attachments/assets/585066e7-a0e2-46d6-bd6c-c5f6a4653568"/>
